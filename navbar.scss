@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+// * {
+//     padding: 0px;
+//     margin: 0px;
+//     box-sizing: border-box;
+//     font-family: 'Oswald', sans-serif;
+//     // font-family: 'Anton', sans-serif;
+//     overflow: hidden;
+// }
+
+$navbar-bg: rgb(24, 24, 24);
+$navbar-txt: rgb(241, 241, 241);
+$navbar-height: 100px;
+
+@mixin sizing($width) {
+    height: 100%;
+    width: $width;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin border-green {
+    // border: 1px solid green;
+}
+
+@mixin border-blue {
+    border: 1px solid blue;
+}
+
+@mixin border-red {
+    border: 1px solid red;
+}
+
+
+.navbar {
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    height: $navbar-height;
+    width: 100%;
+    background-color: $navbar-bg;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    .left {
+        @include sizing(30%);
+        @include flex-column;
+        // @include border-green;
+        h1 {
+            margin-left: 30px;
+            color: $navbar-txt;
+            font-weight: normal;
+        }
+        img {
+            margin-right: 30px;
+            width: 80px;
+        }
+    }
+    .center {
+        @include flex-column;
+        // @include border-green;
+        flex: auto;
+        text-align: center;
+    }
+    .right {
+        @include sizing(40%);
+        @include flex-column;
+        // @include border-green;
+        text-align: center;
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                // @include border-blue;
+                flex: auto;
+                font-size: 18px;
+                a {
+                    display: inline-block;
+                    color: $navbar-txt;
+                    width: 100%;
+                    height: 100%;
+                    padding-bottom: 5px;
+                    &:hover {
+                        padding-bottom: 0px;
+                        border-bottom:
+                            5px solid $navbar-txt;
+                        background-color: lighten($navbar-bg, 10%);
+                    }
+                }
+            }
+        }
+    }
+    .filler {
+        // @include border-red;
+        width: 100%;
+        flex: auto;
+    }
+}
+
+.wedge {
+    width: 100%;
+    height: $navbar-height;
+    margin-bottom: 100px;
+}

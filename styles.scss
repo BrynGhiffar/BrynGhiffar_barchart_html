@@ -1,6 +1,15 @@
 @use "sass:math";
 * {
     font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    // overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 @mixin make_graph(
@@ -91,9 +100,15 @@
     }
 }
 
+.welcome {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+
 .chart-wrap0 {
     $chart-width:650;
-    $chart-height:500px;
+    $chart-height:650px;
     $grid-color:#aaa;
     $bar-color:#61f135;
     $bar-thickness:70px;
@@ -110,11 +125,12 @@
         $bar-spacing,
         $max-val
     );
+    margin: 0 auto;
 }
 
 .chart-wrap1 {
     $chart-width:650px;
-    $chart-height:500px;
+    $chart-height:650px;
     $grid-color:#aaa;
     $bar-color:#f1a635;
     $bar-thickness:100px;
@@ -131,11 +147,12 @@
         $bar-spacing,
         $max-val
     );
+    margin: 0 auto;
 }
 
 .chart-wrap2 {
     $chart-width:650px;
-    $chart-height:500px;
+    $chart-height:650px;
     $grid-color:#aaa;
     $bar-color:#e04a40;
     $bar-thickness:100px;
@@ -152,11 +169,12 @@
         $bar-spacing,
         $max-val
     );
+    margin: 0 auto;
 }
 
 .chart-wrap3 {
     $chart-width:650px;
-    $chart-height:500px;
+    $chart-height:650px;
     $grid-color:#aaa;
     $bar-color:#40e063;
     $bar-thickness:100px;
@@ -173,11 +191,12 @@
         $bar-spacing,
         $max-val
     );
+    margin: 0 auto;
 }
 
 .chart-wrap4 {
     $chart-width:650px;
-    $chart-height:500px;
+    $chart-height:650px;
     $grid-color:#aaa;
     $bar-color:#40a0e0;
     $bar-thickness:100px;
@@ -194,4 +213,5 @@
         $bar-spacing,
         $max-val
     );
+    margin: 0 auto;
 }

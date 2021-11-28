@@ -1,11 +1,26 @@
 * {
   font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.welcome {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
 }
 
 .chart-wrap0 {
   margin-left: 50px;
   height: 650;
-  width: 500px;
+  width: 650px;
+  margin: 0 auto;
 }
 .chart-wrap0 .title {
   font-weight: bold;
@@ -15,7 +30,7 @@
   white-space: nowrap;
 }
 .chart-wrap0.vertical .grid {
-  transform: translateY(-75px) translateX(75px) rotate(-90deg);
+  transform: translateY(0px) translateX(0px) rotate(-90deg);
 }
 .chart-wrap0.vertical .grid .bar::after {
   transform: translateY(-45%) translateX(10%) rotate(90deg);
@@ -69,7 +84,8 @@
 .chart-wrap1 {
   margin-left: 50px;
   height: 650px;
-  width: 500px;
+  width: 650px;
+  margin: 0 auto;
 }
 .chart-wrap1 .title {
   font-weight: bold;
@@ -79,7 +95,7 @@
   white-space: nowrap;
 }
 .chart-wrap1.vertical .grid {
-  transform: translateY(-75px) translateX(75px) rotate(-90deg);
+  transform: translateY(0px) translateX(0px) rotate(-90deg);
 }
 .chart-wrap1.vertical .grid .bar::after {
   transform: translateY(-45%) translateX(10%) rotate(90deg);
@@ -133,7 +149,8 @@
 .chart-wrap2 {
   margin-left: 50px;
   height: 650px;
-  width: 500px;
+  width: 650px;
+  margin: 0 auto;
 }
 .chart-wrap2 .title {
   font-weight: bold;
@@ -143,7 +160,7 @@
   white-space: nowrap;
 }
 .chart-wrap2.vertical .grid {
-  transform: translateY(-75px) translateX(75px) rotate(-90deg);
+  transform: translateY(0px) translateX(0px) rotate(-90deg);
 }
 .chart-wrap2.vertical .grid .bar::after {
   transform: translateY(-45%) translateX(10%) rotate(90deg);
@@ -197,7 +214,8 @@
 .chart-wrap3 {
   margin-left: 50px;
   height: 650px;
-  width: 500px;
+  width: 650px;
+  margin: 0 auto;
 }
 .chart-wrap3 .title {
   font-weight: bold;
@@ -207,7 +225,7 @@
   white-space: nowrap;
 }
 .chart-wrap3.vertical .grid {
-  transform: translateY(-75px) translateX(75px) rotate(-90deg);
+  transform: translateY(0px) translateX(0px) rotate(-90deg);
 }
 .chart-wrap3.vertical .grid .bar::after {
   transform: translateY(-45%) translateX(10%) rotate(90deg);
@@ -261,7 +279,8 @@
 .chart-wrap4 {
   margin-left: 50px;
   height: 650px;
-  width: 500px;
+  width: 650px;
+  margin: 0 auto;
 }
 .chart-wrap4 .title {
   font-weight: bold;
@@ -271,7 +290,7 @@
   white-space: nowrap;
 }
 .chart-wrap4.vertical .grid {
-  transform: translateY(-75px) translateX(75px) rotate(-90deg);
+  transform: translateY(0px) translateX(0px) rotate(-90deg);
 }
 .chart-wrap4.vertical .grid .bar::after {
   transform: translateY(-45%) translateX(10%) rotate(90deg);
