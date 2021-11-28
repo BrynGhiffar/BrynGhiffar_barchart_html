@@ -22,7 +22,6 @@ a {
     $bar-spacing:0px,
     $max-val: '100'
 ) {
-    margin-left:50px;
     .title{
         font-weight:bold;
         font-size:1.62em;
@@ -110,8 +109,8 @@ a {
     $chart-width:650;
     $chart-height:650px;
     $grid-color:#aaa;
-    $bar-color:#61f135;
-    $bar-thickness:70px;
+    $bar-color:#186600;
+    $bar-thickness:80px;
     $bar-rounded: 0px;
     $bar-spacing:0px;
     $max-val: '400';
@@ -135,7 +134,7 @@ a {
     $bar-color:#f1a635;
     $bar-thickness:100px;
     $bar-rounded: 0px;
-    $bar-spacing:150px;
+    $bar-spacing:130px;
     $max-val: '900';
     @include make_graph(
         $chart-width,

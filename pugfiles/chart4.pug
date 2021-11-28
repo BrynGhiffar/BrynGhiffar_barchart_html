@@ -1,0 +1,10 @@
+extends templates/layout
+block doc-title
+    title Fifth Chart
+block main
+    .chart-wrap4.vertical
+        h2.title Passenger composition based on class
+        .grid
+            .bar(style="--bar-value:89%;", data-name="First", title="First: 709 passengers")
+            .bar(style="--bar-value:40%;", data-name="Business", title="Business: 323 passengers")
+            .bar(style="--bar-value:35%;", data-name="Economy", title="Economy: 277 passengers")

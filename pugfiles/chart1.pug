@@ -1,0 +1,9 @@
+extends templates/layout 
+block doc-title
+    title Second Chart
+block main
+    .chart-wrap1.vertical
+        h1.title Passenger composition based on gender
+        .grid
+            .bar(style="--bar-value:94%;", data-name="Male", title="Male: 843 passengers")
+            .bar(style="--bar-value:52%;", data-name="Female", title="Female: 466 passengers")

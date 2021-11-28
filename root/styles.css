@@ -17,7 +17,6 @@ a {
 }
 
 .chart-wrap0 {
-  margin-left: 50px;
   height: 650;
   width: 650px;
   margin: 0 auto;
@@ -65,13 +64,13 @@ a {
 }
 .chart-wrap0 .bar {
   width: var(--bar-value);
-  height: 70px;
+  height: 80px;
   margin: 0px 0;
-  background-color: #61f135;
+  background-color: #186600;
   border-radius: 0 0px 0px 0;
 }
 .chart-wrap0 .bar:hover {
-  background-color: #41e310;
+  background-color: #0c3300;
 }
 .chart-wrap0 .bar::after {
   content: attr(data-name);
@@ -82,7 +81,6 @@ a {
 }
 
 .chart-wrap1 {
-  margin-left: 50px;
   height: 650px;
   width: 650px;
   margin: 0 auto;
@@ -131,7 +129,7 @@ a {
 .chart-wrap1 .bar {
   width: var(--bar-value);
   height: 100px;
-  margin: 150px 0;
+  margin: 130px 0;
   background-color: #f1a635;
   border-radius: 0 0px 0px 0;
 }
@@ -147,7 +145,6 @@ a {
 }
 
 .chart-wrap2 {
-  margin-left: 50px;
   height: 650px;
   width: 650px;
   margin: 0 auto;
@@ -212,7 +209,6 @@ a {
 }
 
 .chart-wrap3 {
-  margin-left: 50px;
   height: 650px;
   width: 650px;
   margin: 0 auto;
@@ -277,7 +273,6 @@ a {
 }
 
 .chart-wrap4 {
-  margin-left: 50px;
   height: 650px;
   width: 650px;
   margin: 0 auto;

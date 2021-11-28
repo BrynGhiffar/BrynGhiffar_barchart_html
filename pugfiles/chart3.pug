@@ -1,0 +1,9 @@
+extends templates/layout
+block doc-title
+    title Fourth Chart
+block main
+    .chart-wrap3.vertical
+        h2.title Survivor composition based on gender
+        .grid
+            .bar(style="--bar-value:40%;", data-name="Male", title="Male: 161 survivors")
+            .bar(style="--bar-value:85%;", data-name="Female", title="Female: 339 survivors")
