@@ -1,0 +1,197 @@
+@use "sass:math";
+* {
+    font-family: sans-serif;
+}
+
+@mixin make_graph(
+    $chart-width:650px,
+    $chart-height:300px,
+    $grid-color:#aaa,
+    $bar-color:#61f135,
+    $bar-thickness:50px,
+    $bar-rounded: 0px,
+    $bar-spacing:0px,
+    $max-val: '100'
+) {
+    margin-left:50px;
+    .title{
+        font-weight:bold;
+        font-size:1.62em;
+        padding:0.5em 0 1.8em 0;
+        text-align:center;
+        white-space:nowrap;
+    }
+    &.vertical .grid{
+        transform:
+            translateY(math.div($chart-height,2) - math.div($chart-width,2)) 
+            translateX(math.div($chart-width,2) - math.div($chart-height,2)) 
+            rotate(-90deg);
+        
+        
+        .bar::after{
+            // text above bar translation and rotation
+            transform: translateY(-45%) translateX(10%) rotate(90deg);
+            display: block;
+        }
+        &::before,&::after{
+            transform:translateX(-0.2em) rotate(90deg);
+        }
+    }
+    height:$chart-width;
+    width:$chart-height;
+    .grid{
+        position:relative;
+        padding:5px 0 5px 0;
+        height:100%;
+        width:100%;
+        border-left:2px solid $grid-color;
+        
+        background:repeating-linear-gradient(90deg,transparent,transparent 19.5%, lighten($grid-color, 10%) 20%);
+        // rgba(170,170,170,0.7)
+        &::before{
+        font-size:0.8em;
+        font-weight:bold;
+        content:'0';
+        position:absolute;
+        left:-0.5em;
+        top:-1.5em;
+        }
+        &::after{
+        font-size:0.8em;
+        font-weight:bold;
+        content:$max-val;
+        position:absolute;
+        right:-1.5em;
+        top:-1.5em;
+        }
+    }
+    
+    
+    
+    .bar {
+        width: var(--bar-value);
+        height:$bar-thickness;
+        margin:$bar-spacing 0;    
+        background-color:$bar-color;
+        border-radius:0 $bar-rounded $bar-rounded 0;
+        
+        &:hover{
+        // opacity:0.7;
+        background-color: darken($bar-color, 10%);
+        }
+        
+        &::after{
+        content:attr(data-name);
+        margin-left:100%;
+        //line-height:@bar-thickness;
+        padding:10px;
+        display:inline-block;
+        white-space:nowrap;
+        }
+    }
+}
+
+.chart-wrap0 {
+    $chart-width:650;
+    $chart-height:500px;
+    $grid-color:#aaa;
+    $bar-color:#61f135;
+    $bar-thickness:70px;
+    $bar-rounded: 0px;
+    $bar-spacing:0px;
+    $max-val: '400';
+    @include make_graph(
+        $chart-width,
+        $chart-height,
+        $grid-color,
+        $bar-color,
+        $bar-thickness,
+        $bar-rounded,
+        $bar-spacing,
+        $max-val
+    );
+}
+
+.chart-wrap1 {
+    $chart-width:650px;
+    $chart-height:500px;
+    $grid-color:#aaa;
+    $bar-color:#f1a635;
+    $bar-thickness:100px;
+    $bar-rounded: 0px;
+    $bar-spacing:150px;
+    $max-val: '900';
+    @include make_graph(
+        $chart-width,
+        $chart-height,
+        $grid-color,
+        $bar-color,
+        $bar-thickness,
+        $bar-rounded,
+        $bar-spacing,
+        $max-val
+    );
+}
+
+.chart-wrap2 {
+    $chart-width:650px;
+    $chart-height:500px;
+    $grid-color:#aaa;
+    $bar-color:#e04a40;
+    $bar-thickness:100px;
+    $bar-rounded: 0px;
+    $bar-spacing:150px;
+    $max-val: '900';
+    @include make_graph(
+        $chart-width,
+        $chart-height,
+        $grid-color,
+        $bar-color,
+        $bar-thickness,
+        $bar-rounded,
+        $bar-spacing,
+        $max-val
+    );
+}
+
+.chart-wrap3 {
+    $chart-width:650px;
+    $chart-height:500px;
+    $grid-color:#aaa;
+    $bar-color:#40e063;
+    $bar-thickness:100px;
+    $bar-rounded: 0px;
+    $bar-spacing:150px;
+    $max-val: '450';
+    @include make_graph(
+        $chart-width,
+        $chart-height,
+        $grid-color,
+        $bar-color,
+        $bar-thickness,
+        $bar-rounded,
+        $bar-spacing,
+        $max-val
+    );
+}
+
+.chart-wrap4 {
+    $chart-width:650px;
+    $chart-height:500px;
+    $grid-color:#aaa;
+    $bar-color:#40a0e0;
+    $bar-thickness:100px;
+    $bar-rounded: 0px;
+    $bar-spacing:100px;
+    $max-val: '800';
+    @include make_graph(
+        $chart-width,
+        $chart-height,
+        $grid-color,
+        $bar-color,
+        $bar-thickness,
+        $bar-rounded,
+        $bar-spacing,
+        $max-val
+    );
+}
