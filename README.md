@@ -1,4 +1,4 @@
 # BrynGhiffar_barchart_html
  Interactions Bar Chart Homework
 
-Live site: https://brynghiffar.github.io/BrynGhiffar_barchart_html/
+The live site can be accessed [here!](https://brynghiffar.github.io/BrynGhiffar_barchart_html/root/index.html)
